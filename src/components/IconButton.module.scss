@@ -3,19 +3,25 @@
 
 .icon_button,
 .tooltip {
-  padding: $GAP_XS;
   border-radius: $RADIUS_DEFAULT;
+  transition: all 0.2s ease-in-out;
 }
 .icon_button {
   position: relative;
   display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  max-height: 1.5rem;
   &:hover {
     background-color: $COLOR_GRAY_1;
     .tooltip {
       visibility: visible;
     }
   }
-  .tooltip {
+  > .tooltip {
+    z-index: 1;
+    padding: $GAP_XS;
     font-size: 0.8rem;
     visibility: hidden;
     place-self: center;

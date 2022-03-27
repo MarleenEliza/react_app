@@ -15,8 +15,7 @@
     "display_name": "",
     "description": "",
     "property_type": "node",
-    "property_control": "textarea",
-    "property_control_type": "rows"
+    "property_control": "textarea"
   },
   {
     "is_visible": true,

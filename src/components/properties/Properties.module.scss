@@ -20,7 +20,58 @@
     display: grid;
     max-width: 70%;
     gap: $GAP_S;
-    padding: 0;
+    padding-left: 0;
     list-style-type: none;
+    > .property {
+      padding: $GAP_DEFAULT;
+      border-bottom: 1px solid $COLOR_GRAY_3;
+      display: flex;
+      grid-template-columns: auto auto 100% auto;
+      > button:last-child {
+        margin-left: auto;
+      }
+      > .actions {
+        margin: 0 $GAP_XXL 0 $GAP_DEFAULT;
+        display: flex;
+        gap: $GAP_DEFAULT;
+        > h3 {
+          min-width: max-content;
+        }
+      }
+      > .form {
+        display: grid;
+        gap: $GAP_DEFAULT;
+        width: 100%;
+        flex-grow: 1;
+        color: $COLOR_GRAY_9;
+        * {
+          color: $COLOR_GRAY_9;
+        }
+        .property_item {
+          display: flex;
+          width: 100%;
+          gap: $GAP_DEFAULT;
+          > label {
+            text-transform: capitalize;
+          }
+          > .text_input,
+          .select_input {
+            border-bottom: 1px solid $COLOR_GRAY_3;
+          }
+          > .text_input {
+            width: 20rem;
+          }
+          > .select_input {
+            width: 10rem;
+          }
+          > .text_area {
+            font-family: inherit;
+            width: 100%;
+            height: 5rem;
+            border: 1px solid $COLOR_GRAY_3;
+          }
+        }
+      }
+    }
   }
 }

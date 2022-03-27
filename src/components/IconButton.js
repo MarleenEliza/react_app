@@ -7,7 +7,9 @@ function IconButton(props) {
         src={require(`assets/icons/${props.path}.svg`)}
         alt={`${props.alt ?? props.path} icon`}
       />
-      <span className={classes.tooltip}>{props.tooltip}</span>
+      {props.tooltip && (
+        <span className={classes.tooltip}>{props.tooltip}</span>
+      )}
     </button>
   );
 }

@@ -11,7 +11,7 @@ function Properties() {
   return (
     <section className={classes.properties}>
       <h2 className={classes.title}>
-        Properties{" "}
+        Properties
         <button onClick={addPropertyHandler} className={classes.add_button}>
           <img src={iconPlus} alt="icon plus" />
           Add new Property
@@ -20,7 +20,7 @@ function Properties() {
 
       <ul className={classes.properties_list}>
         {properties.map((property, index) => (
-          <Property key={index} {...property}></Property>
+          <Property index={index} {...property}></Property>
         ))}
       </ul>
     </section>

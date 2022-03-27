@@ -34,7 +34,16 @@ h4 {
 
 main {
   margin: $GAP_XL;
+  input,
+  select,
+  textarea {
+    border: none;
+    background: none;
+  }
   section {
     margin-bottom: $GAP_XXL;
+  }
+  .disabled {
+    opacity: 0.5;
   }
 }
