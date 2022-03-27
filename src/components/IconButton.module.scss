@@ -1,12 +1,12 @@
 @import "assets/styles/colors";
 @import "assets/styles/spacing";
 
-button,
+.icon_button,
 .tooltip {
   padding: $GAP_XS;
   border-radius: $RADIUS_DEFAULT;
 }
-button {
+.icon_button {
   position: relative;
   display: grid;
   &:hover {
