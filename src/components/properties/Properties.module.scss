@@ -1,0 +1,17 @@
+@import "assets/styles/colors";
+@import "assets/styles/spacing";
+
+.properties {
+  display: flex;
+  gap: $GAP_S;
+  align-items: center;
+  .add_button {
+    line-height: 1;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    gap: $GAP_XS;
+    text-decoration: underline;
+    color: $COLOR_HIGHLIGHT;
+  }
+}
