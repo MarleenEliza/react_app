@@ -1,0 +1,39 @@
+@import "assets/styles/colors";
+@import "assets/styles/spacing";
+
+button,
+.tooltip {
+  padding: $GAP_XS;
+  border-radius: $RADIUS_DEFAULT;
+}
+button {
+  position: relative;
+  display: grid;
+  &:hover {
+    background-color: $COLOR_GRAY_1;
+    .tooltip {
+      visibility: visible;
+    }
+  }
+  .tooltip {
+    font-size: 0.8rem;
+    visibility: hidden;
+    place-self: center;
+    position: absolute;
+    width: max-content;
+    max-width: 120px;
+    top: calc(100% + 8px);
+    color: $COLOR_GRAY_5;
+    background-color: $COLOR_GRAY_10;
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      left: calc(50% - 4px);
+      top: -7px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 7px solid $COLOR_GRAY_10;
+    }
+  }
+}

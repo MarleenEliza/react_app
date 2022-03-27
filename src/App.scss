@@ -1,5 +1,13 @@
 @import "assets/styles/colors";
+@import "assets/styles/spacing";
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  text-transform: capitalize;
+}
 h1,
 h2,
 h3 {
@@ -11,7 +19,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 h3 {
@@ -22,4 +30,11 @@ h3 {
 h4 {
   font-weight: normal;
   font-size: 1.1rem;
+}
+
+main {
+  margin: $GAP_XL;
+  section {
+    margin-bottom: $GAP_XXL;
+  }
 }

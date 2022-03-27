@@ -1,10 +1,18 @@
 import "./App.scss";
-import Header from "components/header/Header";
+import TopBar from "components/topbar/TopBar";
+import Header from "components/Header";
+import Preview from "components/Preview";
+
+const name = "button";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <TopBar />
+      <main>
+        <Header />
+        <Preview />
+      </main>
       <p>
         Edit <code>src/App.js</code> and save to reload.
       </p>
