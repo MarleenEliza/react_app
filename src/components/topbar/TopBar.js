@@ -3,7 +3,7 @@ import IconButton from "components/IconButton";
 
 function Header() {
   return (
-    <header>
+    <header className={classes.top_bar}>
       <IconButton
         className={classes.menu_button}
         path="layout-medium-tile-outline"

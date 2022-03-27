@@ -1,18 +1,9 @@
-import IconButton from "components/IconButton";
-import classes from "components/Preview.module.scss";
-
-const name = "button";
-
 function Preview() {
   return (
-    <p className={classes.preview_title}>
-      <h1>{name}</h1>
-      <IconButton
-        tooltip="Toggle component visibility in library"
-        path="visibility-visible"
-      />
-      <IconButton tooltip="Component settings" path="gear" />
-    </p>
+    <section>
+      <h2>Component Preview</h2>
+      {/* <Component /> */}
+    </section>
   );
 }
 

@@ -1,5 +1,6 @@
 import "./App.scss";
 import TopBar from "components/topbar/TopBar";
+import Header from "components/Header";
 import Preview from "components/Preview";
 
 const name = "button";
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <TopBar />
       <main>
+        <Header />
         <Preview />
       </main>
       <p>
