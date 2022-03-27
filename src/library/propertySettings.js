@@ -10,6 +10,7 @@ export const defaultPropMap = new Map([
     "property_name",
     {
       component: TextInput,
+      annotation: "name of the proerty given in code",
     },
   ],
   [
@@ -29,6 +30,8 @@ export const defaultPropMap = new Map([
     {
       component: SelectInput,
       options: ["one of", "node", "boolean"],
+      annotation:
+        "type of control displayed in editor's properties panel.  Learn more about control types",
     },
   ],
 ]);

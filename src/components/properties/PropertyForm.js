@@ -1,4 +1,4 @@
-import classes from "./Properties.module.scss";
+import classes from "components/properties/PropertyForm.module.scss";
 import { useState } from "react";
 import {
   defaultPropMap,
@@ -80,7 +80,9 @@ function DynamicComponent(props) {
     >
       <label>{props.propKey?.replace("_", " ")}</label>
       <Component onChange={props.onChange} {...props}></Component>
-      {props.annotation && <small>{props.annotation}</small>}
+      {(props.isNewForm || props.propKey === "options") && props.annotation && (
+        <small>{props.annotation}</small>
+      )}
     </div>
   );
 }

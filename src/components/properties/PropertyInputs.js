@@ -1,4 +1,4 @@
-import classes from "./Properties.module.scss";
+import classes from "components/properties/PropertyForm.module.scss";
 
 export function TextInput(props) {
   return (

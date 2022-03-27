@@ -26,20 +26,4 @@
       border-right: 1px solid $COLOR_GRAY_2;
     }
   }
-
-  button {
-    min-width: fit-content;
-    padding: $GAP_S;
-    border-radius: $RADIUS_DEFAULT;
-    &.action_save {
-      color: $COLOR_WHITE;
-      background-color: $COLOR_HIGHLIGHT;
-    }
-    &.action_discard {
-      color: $COLOR_GRAY_9;
-      width: 106px;
-      text-decoration: underline rgb(94, 94, 94);
-      background-color: $COLOR_WHITE;
-    }
-  }
 }
