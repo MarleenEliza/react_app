@@ -1,7 +1,7 @@
 [
   {
     "is_visible": true,
-    "property_name": "color",
+    "property_name": "Color",
     "display_name": "",
     "description": "",
     "property_type": "one of",
@@ -11,7 +11,7 @@
   },
   {
     "is_visible": true,
-    "property_name": "children",
+    "property_name": "Children",
     "display_name": "",
     "description": "",
     "property_type": "node",
@@ -19,7 +19,7 @@
   },
   {
     "is_visible": true,
-    "property_name": "disabled",
+    "property_name": "Disabled",
     "display_name": "",
     "description": "",
     "property_type": "boolean",
@@ -27,7 +27,7 @@
   },
   {
     "is_visible": false,
-    "property_name": "disable focus ripple",
+    "property_name": "Disable focus ripple",
     "display_name": "",
     "description": "",
     "property_type": "boolean",
@@ -35,7 +35,7 @@
   },
   {
     "is_visible": false,
-    "property_name": "disable ripple",
+    "property_name": "Disable ripple",
     "display_name": "",
     "description": "",
     "property_type": "boolean",
@@ -43,7 +43,7 @@
   },
   {
     "is_visible": true,
-    "property_name": "full width",
+    "property_name": "Full width",
     "display_name": "",
     "description": "",
     "property_type": "boolean",
@@ -51,7 +51,7 @@
   },
   {
     "is_visible": true,
-    "property_name": "mini",
+    "property_name": "Mini",
     "display_name": "",
     "description": "",
     "property_type": "boolean",

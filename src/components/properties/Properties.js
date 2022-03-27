@@ -20,7 +20,7 @@ function Properties() {
 
       <ul className={classes.properties_list}>
         {properties.map((property, index) => (
-          <Property index={index} {...property}></Property>
+          <Property key={index} {...property}></Property>
         ))}
       </ul>
     </section>

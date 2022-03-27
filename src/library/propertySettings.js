@@ -2,6 +2,7 @@ import {
   TextInput,
   BooleanInput,
   SelectInput,
+  TextArea,
 } from "components/properties/PropertyInputs";
 
 export const defaultPropMap = new Map([
@@ -20,7 +21,7 @@ export const defaultPropMap = new Map([
   [
     "description",
     {
-      component: TextInput,
+      component: TextArea,
     },
   ],
   [
