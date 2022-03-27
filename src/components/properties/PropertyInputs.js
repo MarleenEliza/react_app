@@ -27,13 +27,18 @@ export function TextArea(props) {
 
 export function BooleanInput(props) {
   return (
-    <input
-      className={classes.boolean_input}
-      type="checkbox"
-      name={props.propKey}
-      checked={props.value}
-      onChange={props.onChange}
-    ></input>
+    <label className={classes.boolean_input} onChange={props.onChange}>
+      <input
+        hidden
+        type="checkbox"
+        name={props.propKey}
+        checked={props.value}
+      />
+      <span className={classes.slider}>
+        <span className={classes.slider_true}>True</span>
+        <span className={classes.slider_false}>False</span>
+      </span>
+    </label>
   );
 }
 

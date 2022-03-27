@@ -78,6 +78,44 @@
             height: 3.5rem;
             border: 1px solid $COLOR_GRAY_3;
           }
+          > .boolean_input {
+            border: 1px solid $COLOR_GRAY_3;
+            display: flex;
+            cursor: pointer;
+            width: 7rem;
+            height: 1.5rem;
+            position: relative;
+            > .slider {
+              display: flex;
+              > .slider_true,
+              .slider_false {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 3.5rem;
+                position: absolute;
+                text-align: center;
+                top: 0px;
+              }
+              > .slider_true {
+                background-color: $COLOR_GRAY_3;
+              }
+              > .slider_false {
+                background-color: $COLOR_WHITE;
+                left: 3.5rem;
+              }
+            }
+
+            > input:checked + .slider {
+              > .slider_true {
+                background-color: $COLOR_WHITE;
+              }
+              > .slider_false {
+                background-color: $COLOR_GRAY_3;
+              }
+            }
+          }
         }
       }
     }
