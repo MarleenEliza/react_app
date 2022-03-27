@@ -1,0 +1,38 @@
+@import "assets/styles/spacing";
+@import "assets/styles/colors";
+
+header {
+  display: flex;
+  align-items: center;
+  gap: $GAP_DEFAULT;
+  padding: $GAP_S;
+  border: 1px solid $COLOR_GRAY_2;
+  .header_title {
+    flex-grow: 1;
+    color: $COLOR_GRAY_7;
+    margin: 0;
+    strong {
+      color: $COLOR_GRAY_11;
+    }
+  }
+  .menu_button {
+    padding: $GAP_XS $GAP_DEFAULT $GAP_XS $GAP_XS;
+    border-right: 1px solid $COLOR_GRAY_2;
+  }
+
+  button {
+    min-width: fit-content;
+    padding: $GAP_S;
+    border-radius: $RADIUS_DEFAULT;
+    &.save_button {
+      color: $COLOR_WHITE;
+      background-color: $COLOR_HIGHLIGHT;
+    }
+    &.discard_button {
+      color: $COLOR_GRAY_9;
+      width: 106px;
+      text-decoration: underline rgb(94, 94, 94);
+      background-color: $COLOR_WHITE;
+    }
+  }
+}
