@@ -1,11 +1,22 @@
 @import "assets/styles/fonts";
 
+html {
+  font-size: 14px;
+}
+
 body {
   margin: 0;
   font-family: "Lato", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 code {
