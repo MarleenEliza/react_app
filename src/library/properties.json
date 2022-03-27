@@ -1,0 +1,79 @@
+[
+  {
+    "is_visible": true,
+    "property_name": "Color",
+    "display_name": "",
+    "description": "",
+    "property_type": "one of",
+    "property_control": "select",
+    "options": ["default", "inherit", "primary", "secondary"],
+    "default_value": "primary"
+  },
+  {
+    "is_visible": true,
+    "property_name": "Children",
+    "display_name": "",
+    "description": "",
+    "property_type": "node",
+    "property_control": "textarea"
+  },
+  {
+    "is_visible": true,
+    "property_name": "Disabled",
+    "display_name": "",
+    "description": "",
+    "property_type": "boolean",
+    "default_value": false
+  },
+  {
+    "is_visible": false,
+    "property_name": "Disable focus ripple",
+    "display_name": "",
+    "description": "",
+    "property_type": "boolean",
+    "default_value": false
+  },
+  {
+    "is_visible": false,
+    "property_name": "Disable ripple",
+    "display_name": "",
+    "description": "",
+    "property_type": "boolean",
+    "default_value": false
+  },
+  {
+    "is_visible": true,
+    "property_name": "Full width",
+    "display_name": "",
+    "description": "",
+    "property_type": "boolean",
+    "default_value": false
+  },
+  {
+    "is_visible": true,
+    "property_name": "Mini",
+    "display_name": "",
+    "description": "",
+    "property_type": "boolean",
+    "default_value": true
+  },
+  {
+    "is_visible": true,
+    "property_name": "Size",
+    "display_name": "",
+    "description": "",
+    "property_type": "one of",
+    "options": ["default", "small", "medium", "large"],
+    "default_value": "large"
+  },
+  {
+    "is_visible": true,
+    "property_name": "Variant",
+    "display_name": "",
+    "description": "",
+    "property_type": "one of",
+    "property_control": "select",
+    "options": ["default", "text", "outlained", "contained"],
+    "default_value": "contained"
+  }
+]

@@ -1,0 +1,83 @@
+@import "assets/styles/colors";
+@import "assets/styles/spacing";
+
+.form {
+  display: grid;
+  gap: $GAP_DEFAULT;
+  width: 100%;
+  flex-grow: 1;
+  color: $COLOR_GRAY_9;
+  * {
+    color: $COLOR_GRAY_9;
+  }
+  .property_item {
+    display: flex;
+    width: 100%;
+    gap: $GAP_DEFAULT;
+    &.block {
+      display: block !important;
+    }
+    > small {
+      color: $COLOR_GRAY_7;
+    }
+    > label {
+      text-transform: capitalize;
+    }
+    > .text_input,
+    .select_input {
+      border-bottom: 1px solid $COLOR_GRAY_3;
+    }
+    > .text_input {
+      width: 20rem;
+    }
+    > .select_input {
+      width: 10rem;
+    }
+    > .text_area {
+      resize: none;
+      padding: $GAP_S;
+      font-family: inherit;
+      width: 100%;
+      height: 3.5rem;
+      border: 1px solid $COLOR_GRAY_3;
+    }
+    > .boolean_input {
+      border: 1px solid $COLOR_GRAY_3;
+      display: flex;
+      cursor: pointer;
+      width: 7rem;
+      height: 1.5rem;
+      position: relative;
+      > .slider {
+        display: flex;
+        > .slider_true,
+        .slider_false {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 3.5rem;
+          position: absolute;
+          text-align: center;
+          top: 0px;
+        }
+        > .slider_true {
+          background-color: $COLOR_GRAY_3;
+        }
+        > .slider_false {
+          background-color: $COLOR_WHITE;
+          left: 3.5rem;
+        }
+      }
+
+      > input:checked + .slider {
+        > .slider_true {
+          background-color: $COLOR_WHITE;
+        }
+        > .slider_false {
+          background-color: $COLOR_GRAY_3;
+        }
+      }
+    }
+  }
+}

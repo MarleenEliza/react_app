@@ -1,0 +1,60 @@
+@import "assets/styles/colors";
+@import "assets/styles/spacing";
+
+.properties {
+  max-width: 70%;
+
+  > .title {
+    display: flex;
+    gap: $GAP_S;
+    align-items: center;
+    margin-bottom: $GAP_L;
+    > .add_button {
+      line-height: 1;
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(2, auto);
+      gap: $GAP_XS;
+      text-decoration: underline;
+      color: $COLOR_HIGHLIGHT;
+    }
+  }
+  > .new_form {
+    display: flex;
+    padding: $GAP_DEFAULT;
+    flex-direction: column;
+    > form {
+      max-width: 80% !important;
+    }
+    > .action_buttons {
+      > button {
+        padding: $GAP_S $GAP_DEFAULT;
+      }
+      margin-left: auto;
+      display: flex;
+    }
+  }
+  > .properties_list {
+    display: grid;
+    gap: $GAP_S;
+    padding-left: 0;
+    list-style-type: none;
+    > .property {
+      padding: $GAP_DEFAULT;
+      border-bottom: 1px solid $COLOR_GRAY_3;
+      display: flex;
+      grid-template-columns: auto auto 100% auto;
+      > button:last-child {
+        margin-left: auto;
+      }
+      > .actions {
+        margin: 0 $GAP_XXL 0 $GAP_DEFAULT;
+        display: flex;
+        gap: $GAP_DEFAULT;
+        > h3 {
+          min-width: max-content;
+        }
+      }
+    }
+  }
+}

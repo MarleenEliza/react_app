@@ -6,7 +6,6 @@ h2,
 h3,
 h4 {
   margin: 0;
-  text-transform: capitalize;
 }
 h1,
 h2,
@@ -32,9 +31,34 @@ h4 {
   font-size: 1.1rem;
 }
 
+.action_button {
+  min-width: fit-content;
+  padding: $GAP_S;
+  border-radius: $RADIUS_DEFAULT;
+  &.save {
+    color: $COLOR_WHITE;
+    background-color: $COLOR_HIGHLIGHT;
+  }
+  &.discard {
+    color: $COLOR_GRAY_9;
+    width: 106px;
+    text-decoration: underline rgb(94, 94, 94);
+    background-color: $COLOR_WHITE;
+  }
+}
+
 main {
   margin: $GAP_XL;
+  input,
+  select,
+  textarea {
+    border: none;
+    background: none;
+  }
   section {
     margin-bottom: $GAP_XXL;
+  }
+  .disabled {
+    opacity: 0.5;
   }
 }

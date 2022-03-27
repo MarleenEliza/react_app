@@ -14,8 +14,8 @@ function Header() {
         Material UI / <strong>Button</strong>
       </h4>
 
-      <button className={classes.action_discard}>Discard changes</button>
-      <button className={classes.action_save}>Save changes</button>
+      <button className="action_button  discard">Discard changes</button>
+      <button className="action_button  save">Save changes</button>
     </header>
   );
 }
