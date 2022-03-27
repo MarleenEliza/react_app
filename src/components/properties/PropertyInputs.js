@@ -27,15 +27,13 @@ export function TextArea(props) {
 
 export function BooleanInput(props) {
   return (
-    <div>
-      <input
-        type="checkbox"
-        name={props.propKey}
-        value={props.value}
-        onChange={props.onChange}
-      ></input>
-      <label> {props.value} </label>
-    </div>
+    <input
+      className={classes.boolean_input}
+      type="checkbox"
+      name={props.propKey}
+      checked={props.value}
+      onChange={props.onChange}
+    ></input>
   );
 }
 

@@ -13,8 +13,13 @@ import { TextArea } from "./PropertyInputs";
 export function PropertyForm(props) {
   const [properties, setProperties] = useState({ ...props });
   const changeHandler = (e) => {
-    const { name, value } = e.target;
-    const parsedValue = name === "options" ? value.split(",") : value;
+    const { name, value, type } = e.target;
+    const parsedValue =
+      type === "checkbox"
+        ? !properties[name]
+        : name === "options"
+        ? value.split(",")
+        : value;
     setProperties({ ...properties, [name]: parsedValue });
   };
   const propertyTypeValue =
@@ -35,7 +40,7 @@ export function PropertyForm(props) {
           onChange={changeHandler}
         ></DynamicComponent>
       ))}
-      {propertyControlValue && (
+      {propertyTypeValue && (
         <DynamicComponent
           className="property_control"
           {...propertyTypeValue}
