@@ -37,6 +37,7 @@ export function PropertyForm(props) {
           propKey={key}
           value={properties[key]}
           {...defaultPropMap.get(key)}
+          isNewForm={props.isNewForm}
           onChange={changeHandler}
         ></DynamicComponent>
       ))}
@@ -54,7 +55,7 @@ export function PropertyForm(props) {
           component={TextArea}
           value={properties["options"].join(",")}
           propKey="options"
-          annotation="(list options separared by comma)"
+          annotation="list options separared by comma"
           onChange={changeHandler}
         ></DynamicComponent>
       )}
@@ -81,7 +82,7 @@ function DynamicComponent(props) {
       <label>{props.propKey?.replace("_", " ")}</label>
       <Component onChange={props.onChange} {...props}></Component>
       {(props.isNewForm || props.propKey === "options") && props.annotation && (
-        <small>{props.annotation}</small>
+        <small>({props.annotation})</small>
       )}
     </div>
   );

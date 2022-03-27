@@ -2,7 +2,7 @@ import IconButton from "components/IconButton";
 import classes from "components/Header.module.scss";
 import { useState } from "react";
 
-const name = "button";
+const name = "Button";
 
 function Header() {
   const [isVisible, setIsVisible] = useState(true);

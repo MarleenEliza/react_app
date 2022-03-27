@@ -12,6 +12,7 @@
   }
   .property_item {
     display: flex;
+    position: relative;
     width: 100%;
     gap: $GAP_DEFAULT;
     &.block {

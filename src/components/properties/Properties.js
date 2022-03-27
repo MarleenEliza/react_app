@@ -28,7 +28,7 @@ function Properties() {
       </h2>
       {isEditing && (
         <div className={classes.new_form}>
-          <PropertyForm {...newProperty} isNewForm />
+          <PropertyForm {...newProperty} isNewForm={true} />
           <div className={classes.action_buttons}>
             <button
               className="action_button  discard"
